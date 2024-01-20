@@ -12,7 +12,7 @@ namespace Sana07
         public DateTime DateOfManufacture { get; set; }
         public override string Display()
         {
-            return $"{Name} {Filling} {DateOfManufacture} {Price} {Count}";
+            return $"Назва: {Name} || Начинка: {Filling} || Дата виготовлення: {DateOfManufacture} || Ціна: {Price} || Кількість: {Count}";
         }
         public Cake(string name, decimal price, int count, string filling, DateTime dateOfManufacture) : base(name, price, count)
         {

@@ -12,7 +12,7 @@ namespace Sana07
         public string Size { get; set; }
         public override string Display()
         {
-            return $"{Name} {Material} {Size} {Price} {Count}";
+            return $"Назва: {Name} || Матеріал: {Material} || Розмір: {Size} || Ціна: {Price} || Кількість: {Count}";
         }
         public Table(string name, decimal price, int count, string material, string size) : base(name, price, count)
         {

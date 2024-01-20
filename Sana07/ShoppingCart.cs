@@ -8,10 +8,14 @@ namespace Sana07
 {
     public class ShoppingCart
     {
-        private List<Product> items;
+        protected List<Product> items;
         public ShoppingCart() 
         { 
             items = new List<Product>();
+        }
+        public void AddItems(Product product)
+        {
+            items.Add(product);
         }
         public List<string> ItemsInfo()
         {

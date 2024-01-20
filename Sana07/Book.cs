@@ -12,7 +12,7 @@ namespace Sana07
         public string Genre { get; set; }
         public override string Display()
         {
-            return $"{Name} {Author} {Genre} {Price} {Count}";
+            return $"Назва: {Name} || Автор: {Author} || Жанр: {Genre} || Ціна: {Price} || Кількість: {Count}";
         }
         public Book(string name, decimal price, int count, string author, string genre) : base(name, price, count)
         {
